@@ -17,6 +17,5 @@ npm run dev
 To publish
 
 ```bash
-npm run build
 npm run deploy
 ```
