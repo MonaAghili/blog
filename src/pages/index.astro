@@ -93,7 +93,7 @@ const posts = (await getCollection("blog")).sort(
           {
             posts.map((post) => (
               <li>
-                <a href={`${Astro?.site?.pathname}/${post.id}/`}>
+                <a href={`${import.meta.env.BASE_URL}${post.id}/`}>
                   {post.data.heroImage && (
                     <img
                       width={720}
