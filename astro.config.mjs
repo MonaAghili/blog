@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
 	site: 'https://monaaghili.github.io/blog/',
-	base: '/blog/',
+	base: '/',
 	integrations: [mdx(), sitemap()],
 });
