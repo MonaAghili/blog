@@ -1,4 +1,6 @@
-# 🌙 Mona's Blog
+# CodexLogica
+
+#### 🌙 Mona's Blog
 
 This is my personal blog where I write down thoughts, notes, and anything I feel like sharing.  
 Hosted on GitHub Pages.
