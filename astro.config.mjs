@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-	site: 'https://monaaghili.github.io/blog/',
-	base: '/',
+	site: 'https://monaaghili.github.io/',
+	base: '/blog/',
 	integrations: [mdx(), sitemap()],
 });
