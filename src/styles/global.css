@@ -45,14 +45,15 @@ body {
   min-height: 100vh;
 }
 
-header, footer {
+header,
+footer {
   flex-shrink: 0;
 }
 
 main {
   flex: 1;
   margin: auto;
-  padding: 3em 1em 1em;
+  padding: 2em 1em 1em;
   max-width: 100%;
   width: 720px;
 }
@@ -159,4 +160,58 @@ hr {
   clip-path: inset(50%);
   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
+}
+
+.prose .title {
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prose .title h1 {
+  font-size: 1.3em;
+}
+.prose .date {
+  margin-bottom: 0.7em;
+  color: rgb(var(--gray));
+  font-size: 0.7em;
+}
+.last-updated-on {
+  font-style: italic;
+}
+.articles {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.articles li * {
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.articles li a {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-bottom: 0.5em;
+}
+.articles li a h4 {
+  font-size: 1em;
+}
+.articles .title {
+  margin: 0;
+  color: rgb(var(--black));
+  line-height: 1;
+}
+.articles .date {
+  margin: 0;
+  color: rgb(var(--gray));
+  font-size: 0.6em;
+}
+.articles li a:hover h4 {
+  color: rgb(var(--accent));
 }

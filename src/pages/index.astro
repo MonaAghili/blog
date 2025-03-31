@@ -15,47 +15,12 @@ const posts = (await getCollection("blog")).sort(
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
-      ul {
-        width: 100%;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      ul li * {
-        text-decoration: none;
-        transition: 0.2s ease;
-      }
-      ul li a {
-        display: flex;
-        align-items: center;
-        gap:0.6em;
-        margin-bottom: 0.5em;
-      }
-      ul li a h4{
-        font-size: 1.2em;
-      }
-      .title {
-        margin: 0;
-        color: rgb(var(--black));
-        line-height: 1;
-      }
-      .date {
-        margin: 0;
-        color: rgb(var(--gray));
-        font-size: 0.65em;
-      }
-      ul li a:hover h4{
-        color: rgb(var(--accent));
-      }
-    </style>
   </head>
   <body>
     <Header />
     <main>
       <section>
-        <ul>
+        <ul class="articles">
           {
             posts.map((post) => (
               <li>
