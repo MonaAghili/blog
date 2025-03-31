@@ -51,9 +51,10 @@ header, footer {
 
 main {
   flex: 1;
-  max-width: calc(100% - 2em);
   margin: auto;
-  padding: 3em 1em;
+  padding: 3em 1em 1em;
+  max-width: 100%;
+  width: 720px;
 }
 h1,
 h2,
